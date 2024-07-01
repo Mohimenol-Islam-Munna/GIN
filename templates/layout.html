@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        {{ template "header.html" . }}
+    </div>
+    <div>
+        {{ block "content" . }} {{ end }}
+    </div>
+    <div>
+        {{ template "footer.html" . }}
+    </div>
+</body>
+</html>
